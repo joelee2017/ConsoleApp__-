@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApp_存取元素
 {
@@ -6,7 +7,14 @@ namespace ConsoleApp_存取元素
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var firstLastItems = new[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+            string firstContainsO = firstLastItems.First(s => s.Contains('o'));
+            string lastContainsO = firstLastItems.Last(s => s.Contains('o'));
+
+            Console.WriteLine($"First string starting with 'o':{firstContainsO}");
+            Console.WriteLine($"Last string starting with 'o':{lastContainsO}");
+            Console.Read();
         }
     }
 }
