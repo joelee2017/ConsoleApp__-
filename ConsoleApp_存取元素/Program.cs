@@ -15,6 +15,14 @@ namespace ConsoleApp_存取元素
             Console.WriteLine($"First string starting with 'o':{firstContainsO}");
             Console.WriteLine($"Last string starting with 'o':{lastContainsO}");
             Console.Read();
+
+            string itemAtThree = firstLastItems.ElementAt(2);
+            string itemAtSix = firstLastItems.ElementAt(5);
+
+            Console.WriteLine($"3rd string in list : {itemAtThree}");
+            Console.WriteLine($"3rd string in list : {itemAtSix}");
+            Console.Read();
+
         }
     }
 }
